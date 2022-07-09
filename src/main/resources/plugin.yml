@@ -1,0 +1,5 @@
+name: BetterGamemode
+version: '${project.version}'
+main: me.mbg206.bettergamemode.BetterGamemode
+api-version: 1.19
+prefix: [ BetterGamemode ]

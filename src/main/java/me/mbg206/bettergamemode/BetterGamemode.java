@@ -1,6 +1,5 @@
 package me.mbg206.bettergamemode;
 
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class BetterGamemode extends JavaPlugin {

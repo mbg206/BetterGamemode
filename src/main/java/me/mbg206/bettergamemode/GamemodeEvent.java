@@ -1,11 +1,10 @@
 package me.mbg206.bettergamemode;
 
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
-import org.bukkit.plugin.java.JavaPlugin;
 
 public class GamemodeEvent implements Listener {
     PluginManager manager;
@@ -13,7 +12,7 @@ public class GamemodeEvent implements Listener {
         manager = p;
     }
 
-    @EventHandler //(priority = EventPriority.HIGHEST)
+    @EventHandler(priority = EventPriority.HIGHEST)
     public void onCommandPreprocess(PlayerCommandPreprocessEvent event) {
         String[] args = event.getMessage().split(" ");
         if (!args[0].equalsIgnoreCase("/gamemode")) return;
